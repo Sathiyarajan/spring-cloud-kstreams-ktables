@@ -1,0 +1,6 @@
+/opt/spring-cloud/spring-cloud-stream-samples/processor-samples/streamlistener-basic/src/main/java/demo/SampleSource.java
+/opt/spring-cloud/spring-cloud-stream-samples/processor-samples/streamlistener-basic/src/main/java/demo/SampleTransformer.java
+/opt/spring-cloud/spring-cloud-stream-samples/processor-samples/streamlistener-basic/src/main/java/demo/Foo.java
+/opt/spring-cloud/spring-cloud-stream-samples/processor-samples/streamlistener-basic/src/main/java/demo/Bar.java
+/opt/spring-cloud/spring-cloud-stream-samples/processor-samples/streamlistener-basic/src/main/java/demo/TypeConversionApplication.java
+/opt/spring-cloud/spring-cloud-stream-samples/processor-samples/streamlistener-basic/src/main/java/demo/SampleSink.java

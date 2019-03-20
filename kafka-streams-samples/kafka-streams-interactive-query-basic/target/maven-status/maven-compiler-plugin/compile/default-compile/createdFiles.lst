@@ -1,0 +1,4 @@
+kafka/streams/product/tracker/KafkaStreamsInteractiveQueryApplication$Product.class
+kafka/streams/product/tracker/KafkaStreamsInteractiveQueryApplication.class
+kafka/streams/product/tracker/KafkaStreamsInteractiveQueryApplication$InteractiveProductCountApplication.class
+kafka/streams/product/tracker/KafkaStreamsInteractiveQueryApplication$ProductTrackerProperties.class

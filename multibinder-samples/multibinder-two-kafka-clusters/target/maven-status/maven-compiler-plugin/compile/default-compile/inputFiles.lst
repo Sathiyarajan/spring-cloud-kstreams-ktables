@@ -1,0 +1,2 @@
+/opt/spring-cloud/spring-cloud-stream-samples/multibinder-samples/multibinder-two-kafka-clusters/src/main/java/multibinder/MultibinderApplication.java
+/opt/spring-cloud/spring-cloud-stream-samples/multibinder-samples/multibinder-two-kafka-clusters/src/main/java/multibinder/BridgeTransformer.java

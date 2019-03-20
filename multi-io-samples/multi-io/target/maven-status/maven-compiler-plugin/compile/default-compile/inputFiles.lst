@@ -1,0 +1,3 @@
+/opt/spring-cloud/spring-cloud-stream-samples/multi-io-samples/multi-io/src/main/java/demo/SampleSink.java
+/opt/spring-cloud/spring-cloud-stream-samples/multi-io-samples/multi-io/src/main/java/demo/SampleSource.java
+/opt/spring-cloud/spring-cloud-stream-samples/multi-io-samples/multi-io/src/main/java/demo/MultipleIOChannelsApplication.java

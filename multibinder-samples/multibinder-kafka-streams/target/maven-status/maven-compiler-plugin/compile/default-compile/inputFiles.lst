@@ -1,0 +1,4 @@
+/opt/spring-cloud/spring-cloud-stream-samples/multibinder-samples/multibinder-kafka-streams/src/main/java/multibinder/BridgeTransformer.java
+/opt/spring-cloud/spring-cloud-stream-samples/multibinder-samples/multibinder-kafka-streams/src/main/java/multibinder/MultibinderApplication.java
+/opt/spring-cloud/spring-cloud-stream-samples/multibinder-samples/multibinder-kafka-streams/src/main/java/multibinder/DomainEvent.java
+/opt/spring-cloud/spring-cloud-stream-samples/multibinder-samples/multibinder-kafka-streams/src/main/java/multibinder/Producers.java

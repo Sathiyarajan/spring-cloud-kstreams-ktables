@@ -1,0 +1,3 @@
+demo/producer/PartProducerApplication.class
+demo/producer/Producer$KafkaPartitionProducerApplication.class
+demo/producer/Producer.class

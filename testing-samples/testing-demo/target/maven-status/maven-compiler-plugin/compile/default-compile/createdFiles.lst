@@ -1,0 +1,3 @@
+org/springframework/cloud/stream/testing/source/FooBarSource.class
+org/springframework/cloud/stream/testing/sink/JdbcSink.class
+org/springframework/cloud/stream/testing/processor/ToUpperCaseProcessor.class

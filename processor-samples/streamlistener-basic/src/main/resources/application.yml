@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        sample-source:
+          destination: testtock
+        input:
+          destination: testtock
+        output:
+          destination: xformed
+        sample-sink:
+          destination: xformed

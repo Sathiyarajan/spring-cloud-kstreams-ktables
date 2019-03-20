@@ -1,0 +1,2 @@
+/opt/spring-cloud/spring-cloud-stream-samples/schema-registry-samples/schema-registry-vanilla/schema-registry-vanilla-consumer/src/main/java/sample/consumer/ConsumerApplication.java
+/opt/spring-cloud/spring-cloud-stream-samples/schema-registry-samples/schema-registry-vanilla/schema-registry-vanilla-consumer/target/generated-sources/avro/com/example/Sensor.java

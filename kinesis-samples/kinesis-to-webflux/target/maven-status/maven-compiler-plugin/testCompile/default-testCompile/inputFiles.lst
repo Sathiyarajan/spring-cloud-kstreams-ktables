@@ -1,0 +1,2 @@
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/src/test/java/kinesis/webflux/LocalKinesisResource.java
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/src/test/java/kinesis/webflux/CloudStreamKinesisToWebfluxApplicationTests.java

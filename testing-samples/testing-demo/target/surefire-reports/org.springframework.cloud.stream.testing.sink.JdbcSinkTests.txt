@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.cloud.stream.testing.sink.JdbcSinkTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.085 s - in org.springframework.cloud.stream.testing.sink.JdbcSinkTests

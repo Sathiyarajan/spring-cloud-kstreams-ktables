@@ -1,0 +1,8 @@
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-produce-consume/src/main/java/demo/controller/OrderController.java
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-produce-consume/src/main/java/demo/repository/OrderRepository.java
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-produce-consume/src/main/java/demo/stream/OrdersSource.java
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-produce-consume/src/main/java/demo/KinesisApplication.java
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-produce-consume/src/main/java/demo/data/Order.java
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-produce-consume/src/main/java/demo/stream/Event.java
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-produce-consume/src/main/java/demo/stream/OrderStreamConfiguration.java
+/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-produce-consume/src/main/java/demo/stream/OrderProcessor.java

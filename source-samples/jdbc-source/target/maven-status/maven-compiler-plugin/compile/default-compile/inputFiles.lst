@@ -1,0 +1,2 @@
+/opt/spring-cloud/spring-cloud-stream-samples/source-samples/jdbc-source/src/main/java/demo/JdbcSourceProperties.java
+/opt/spring-cloud/spring-cloud-stream-samples/source-samples/jdbc-source/src/main/java/demo/SampleJdbcSource.java

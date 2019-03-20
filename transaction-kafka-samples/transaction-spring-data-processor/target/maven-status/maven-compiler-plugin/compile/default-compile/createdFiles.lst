@@ -1,0 +1,4 @@
+sample/processor/PersonRepository.class
+sample/processor/Person.class
+sample/processor/ProcessorApplication$PersonEvent.class
+sample/processor/ProcessorApplication.class

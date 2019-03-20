@@ -1,0 +1,4 @@
+kinesis/webflux/LocalKinesisResource.class
+kinesis/webflux/CloudStreamKinesisToWebfluxApplicationTests$KinesisTestConfiguration.class
+kinesis/webflux/CloudStreamKinesisToWebfluxApplicationTests$TestSource.class
+kinesis/webflux/CloudStreamKinesisToWebfluxApplicationTests.class

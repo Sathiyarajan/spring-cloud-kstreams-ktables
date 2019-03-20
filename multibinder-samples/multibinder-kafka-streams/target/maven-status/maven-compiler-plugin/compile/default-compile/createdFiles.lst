@@ -1,0 +1,11 @@
+multibinder/MultibinderApplication.class
+multibinder/BridgeTransformer$TestSink.class
+multibinder/BridgeTransformer.class
+multibinder/BridgeTransformer$TestConsumer.class
+multibinder/DomainEvent.class
+multibinder/BridgeTransformer$KafkaStreamsAggregateSampleApplication.class
+multibinder/BridgeTransformer$TestSource.class
+multibinder/BridgeTransformer$KafkaStreamsProcessorX.class
+multibinder/Producers.class
+multibinder/BridgeTransformer$TestProducer.class
+multibinder/BridgeTransformer$FooController.class

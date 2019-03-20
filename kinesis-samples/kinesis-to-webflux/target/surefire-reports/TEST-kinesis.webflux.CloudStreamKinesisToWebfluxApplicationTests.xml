@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests" time="1.569" tests="1" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="ANSI_X3.4-1968"/>
+    <property name="java.class.path" value="/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/target/test-classes:/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/target/classes:/root/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-webflux-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-json-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.8/jackson-datatype-jdk8-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.8/jackson-module-parameter-names-2.9.8.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-reactor-netty-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/io/projectreactor/netty/reactor-netty/0.8.5.RELEASE/reactor-netty-0.8.5.RELEASE.jar:/root/.m2/repository/io/netty/netty-codec-http/4.1.33.Final/netty-codec-http-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-common/4.1.33.Final/netty-common-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-buffer/4.1.33.Final/netty-buffer-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-transport/4.1.33.Final/netty-transport-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-resolver/4.1.33.Final/netty-resolver-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-codec/4.1.33.Final/netty-codec-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-codec-http2/4.1.33.Final/netty-codec-http2-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-handler/4.1.33.Final/netty-handler-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-handler-proxy/4.1.33.Final/netty-handler-proxy-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-codec-socks/4.1.33.Final/netty-codec-socks-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-transport-native-epoll/4.1.33.Final/netty-transport-native-epoll-4.1.33.Final-linux-x86_64.jar:/root/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.33.Final/netty-transport-native-unix-common-4.1.33.Final.jar:/root/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.15.Final/hibernate-validator-6.0.15.Final.jar:/root/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/root/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/root/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar:/root/.m2/repository/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-webflux/5.1.5.RELEASE/spring-webflux-5.1.5.RELEASE.jar:/root/.m2/repository/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/root/.m2/repository/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-stream-reactive/2.2.0.BUILD-SNAPSHOT/spring-cloud-stream-reactive-2.2.0.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-stream/2.2.0.BUILD-SNAPSHOT/spring-cloud-stream-2.2.0.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-validation-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/integration/spring-integration-core/5.1.3.RELEASE/spring-integration-core-5.1.3.RELEASE.jar:/root/.m2/repository/org/springframework/spring-tx/5.1.5.RELEASE/spring-tx-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/integration/spring-integration-jmx/5.1.3.RELEASE/spring-integration-jmx-5.1.3.RELEASE.jar:/root/.m2/repository/org/springframework/spring-tuple/1.0.0.RELEASE/spring-tuple-1.0.0.RELEASE.jar:/root/.m2/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar:/root/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/root/.m2/repository/org/springframework/integration/spring-integration-tuple/1.0.0.RELEASE/spring-integration-tuple-1.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/retry/spring-retry/1.2.4.RELEASE/spring-retry-1.2.4.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-function-context/2.1.0.M1/spring-cloud-function-context-2.1.0.M1.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-function-core/2.1.0.M1/spring-cloud-function-core-2.1.0.M1.jar:/root/.m2/repository/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE.jar:/root/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-stream-binder-kinesis/1.0.0.RELEASE/spring-cloud-stream-binder-kinesis-1.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/integration/spring-integration-aws/2.0.0.RELEASE/spring-integration-aws-2.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-aws-core/2.0.0.RELEASE/spring-cloud-aws-core-2.0.0.RELEASE.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-ec2/1.11.336/aws-java-sdk-ec2-1.11.336.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-cloudformation/1.11.336/aws-java-sdk-cloudformation-1.11.336.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-starter-aws/2.0.0.RELEASE/spring-cloud-starter-aws-2.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-aws-context/2.0.0.RELEASE/spring-cloud-aws-context-2.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-aws-autoconfigure/2.0.0.RELEASE/spring-cloud-aws-autoconfigure-2.0.0.RELEASE.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-dynamodb/1.11.336/aws-java-sdk-dynamodb-1.11.336.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.11.336/aws-java-sdk-s3-1.11.336.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-kms/1.11.336/aws-java-sdk-kms-1.11.336.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.336/aws-java-sdk-core-1.11.336.jar:/root/.m2/repository/org/apache/httpcomponents/httpclient/4.5.7/httpclient-4.5.7.jar:/root/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/root/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar:/root/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.9.8/jackson-dataformat-cbor-2.9.8.jar:/root/.m2/repository/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar:/root/.m2/repository/com/amazonaws/jmespath-java/1.11.336/jmespath-java-1.11.336.jar:/root/.m2/repository/com/amazonaws/dynamodb-lock-client/1.0.0/dynamodb-lock-client-1.0.0.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar:/root/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-kinesis/1.11.336/aws-java-sdk-kinesis-1.11.336.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-test-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test/2.1.4.BUILD-SNAPSHOT/spring-boot-test-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.1.4.BUILD-SNAPSHOT/spring-boot-test-autoconfigure-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/root/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/root/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/root/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/root/.m2/repository/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar:/root/.m2/repository/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10.jar:/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.10/byte-buddy-agent-1.9.10.jar:/root/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/root/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/root/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/root/.m2/repository/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-jcl/5.1.5.RELEASE/spring-jcl-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar:/root/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar:/root/.m2/repository/io/projectreactor/reactor-test/3.2.6.RELEASE/reactor-test-3.2.6.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-stream-test-support-internal/2.1.0.BUILD-SNAPSHOT/spring-cloud-stream-test-support-internal-2.1.0.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-logging-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar:/root/.m2/repository/org/slf4j/jul-to-slf4j/1.7.26/jul-to-slf4j-1.7.26.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-actuator-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.1.4.BUILD-SNAPSHOT/spring-boot-actuator-autoconfigure-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-actuator/2.1.4.BUILD-SNAPSHOT/spring-boot-actuator-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar:/root/.m2/repository/io/micrometer/micrometer-core/1.1.3/micrometer-core-1.1.3.jar:/root/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar:/root/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot/2.1.4.BUILD-SNAPSHOT/spring-boot-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.4.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/root/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-web-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-tomcat-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.16/tomcat-embed-core-9.0.16.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.16/tomcat-embed-el-9.0.16.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.16/tomcat-embed-websocket-9.0.16.jar:/root/.m2/repository/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-expression/5.1.5.RELEASE/spring-expression-5.1.5.RELEASE.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/target/surefire/surefirebooter3523101118389861606.jar /opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/target/surefire 2019-03-20T21-54-00_723-jvmRun1 surefire743398142236231397tmp surefire_164764051103793942215tmp"/>
+    <property name="surefire.test.class.path" value="/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/target/test-classes:/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/target/classes:/root/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-webflux-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-json-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.8/jackson-datatype-jdk8-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.8/jackson-module-parameter-names-2.9.8.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-reactor-netty-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/io/projectreactor/netty/reactor-netty/0.8.5.RELEASE/reactor-netty-0.8.5.RELEASE.jar:/root/.m2/repository/io/netty/netty-codec-http/4.1.33.Final/netty-codec-http-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-common/4.1.33.Final/netty-common-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-buffer/4.1.33.Final/netty-buffer-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-transport/4.1.33.Final/netty-transport-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-resolver/4.1.33.Final/netty-resolver-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-codec/4.1.33.Final/netty-codec-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-codec-http2/4.1.33.Final/netty-codec-http2-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-handler/4.1.33.Final/netty-handler-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-handler-proxy/4.1.33.Final/netty-handler-proxy-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-codec-socks/4.1.33.Final/netty-codec-socks-4.1.33.Final.jar:/root/.m2/repository/io/netty/netty-transport-native-epoll/4.1.33.Final/netty-transport-native-epoll-4.1.33.Final-linux-x86_64.jar:/root/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.33.Final/netty-transport-native-unix-common-4.1.33.Final.jar:/root/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.15.Final/hibernate-validator-6.0.15.Final.jar:/root/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/root/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/root/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar:/root/.m2/repository/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-webflux/5.1.5.RELEASE/spring-webflux-5.1.5.RELEASE.jar:/root/.m2/repository/org/synchronoss/cloud/nio-multipart-parser/1.1.0/nio-multipart-parser-1.1.0.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/root/.m2/repository/org/synchronoss/cloud/nio-stream-storage/1.1.3/nio-stream-storage-1.1.3.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-stream-reactive/2.2.0.BUILD-SNAPSHOT/spring-cloud-stream-reactive-2.2.0.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-stream/2.2.0.BUILD-SNAPSHOT/spring-cloud-stream-2.2.0.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-validation-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/integration/spring-integration-core/5.1.3.RELEASE/spring-integration-core-5.1.3.RELEASE.jar:/root/.m2/repository/org/springframework/spring-tx/5.1.5.RELEASE/spring-tx-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/integration/spring-integration-jmx/5.1.3.RELEASE/spring-integration-jmx-5.1.3.RELEASE.jar:/root/.m2/repository/org/springframework/spring-tuple/1.0.0.RELEASE/spring-tuple-1.0.0.RELEASE.jar:/root/.m2/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar:/root/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/root/.m2/repository/org/springframework/integration/spring-integration-tuple/1.0.0.RELEASE/spring-integration-tuple-1.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/retry/spring-retry/1.2.4.RELEASE/spring-retry-1.2.4.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-function-context/2.1.0.M1/spring-cloud-function-context-2.1.0.M1.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-function-core/2.1.0.M1/spring-cloud-function-core-2.1.0.M1.jar:/root/.m2/repository/io/projectreactor/reactor-core/3.2.6.RELEASE/reactor-core-3.2.6.RELEASE.jar:/root/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-stream-binder-kinesis/1.0.0.RELEASE/spring-cloud-stream-binder-kinesis-1.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/integration/spring-integration-aws/2.0.0.RELEASE/spring-integration-aws-2.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-aws-core/2.0.0.RELEASE/spring-cloud-aws-core-2.0.0.RELEASE.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-ec2/1.11.336/aws-java-sdk-ec2-1.11.336.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-cloudformation/1.11.336/aws-java-sdk-cloudformation-1.11.336.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-starter-aws/2.0.0.RELEASE/spring-cloud-starter-aws-2.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-aws-context/2.0.0.RELEASE/spring-cloud-aws-context-2.0.0.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-aws-autoconfigure/2.0.0.RELEASE/spring-cloud-aws-autoconfigure-2.0.0.RELEASE.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-dynamodb/1.11.336/aws-java-sdk-dynamodb-1.11.336.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.11.336/aws-java-sdk-s3-1.11.336.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-kms/1.11.336/aws-java-sdk-kms-1.11.336.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.336/aws-java-sdk-core-1.11.336.jar:/root/.m2/repository/org/apache/httpcomponents/httpclient/4.5.7/httpclient-4.5.7.jar:/root/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/root/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar:/root/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.9.8/jackson-dataformat-cbor-2.9.8.jar:/root/.m2/repository/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar:/root/.m2/repository/com/amazonaws/jmespath-java/1.11.336/jmespath-java-1.11.336.jar:/root/.m2/repository/com/amazonaws/dynamodb-lock-client/1.0.0/dynamodb-lock-client-1.0.0.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar:/root/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/root/.m2/repository/com/amazonaws/aws-java-sdk-kinesis/1.11.336/aws-java-sdk-kinesis-1.11.336.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-test-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test/2.1.4.BUILD-SNAPSHOT/spring-boot-test-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.1.4.BUILD-SNAPSHOT/spring-boot-test-autoconfigure-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/root/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/root/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/root/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/root/.m2/repository/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar:/root/.m2/repository/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10.jar:/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.10/byte-buddy-agent-1.9.10.jar:/root/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/root/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/root/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/root/.m2/repository/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-jcl/5.1.5.RELEASE/spring-jcl-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar:/root/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar:/root/.m2/repository/io/projectreactor/reactor-test/3.2.6.RELEASE/reactor-test-3.2.6.RELEASE.jar:/root/.m2/repository/org/springframework/cloud/spring-cloud-stream-test-support-internal/2.1.0.BUILD-SNAPSHOT/spring-cloud-stream-test-support-internal-2.1.0.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-logging-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar:/root/.m2/repository/org/slf4j/jul-to-slf4j/1.7.26/jul-to-slf4j-1.7.26.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-actuator-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.1.4.BUILD-SNAPSHOT/spring-boot-actuator-autoconfigure-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-actuator/2.1.4.BUILD-SNAPSHOT/spring-boot-actuator-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar:/root/.m2/repository/io/micrometer/micrometer-core/1.1.3/micrometer-core-1.1.3.jar:/root/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.jar:/root/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot/2.1.4.BUILD-SNAPSHOT/spring-boot-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.4.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/root/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-web-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.4.BUILD-SNAPSHOT/spring-boot-starter-tomcat-2.1.4.BUILD-SNAPSHOT.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.16/tomcat-embed-core-9.0.16.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.16/tomcat-embed-el-9.0.16.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.16/tomcat-embed-websocket-9.0.16.jar:/root/.m2/repository/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-expression/5.1.5.RELEASE/spring-expression-5.1.5.RELEASE.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/target/surefire/surefirebooter3523101118389861606.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_171-8u171-b11-0ubuntu0.17.10.1-b11"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.13.0-46-generic"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="altSnapshotDeploymentRepository" value="repo.spring.io::default::https://repo.spring.io/libs-snapshot-local"/>
+    <property name="file.encoding" value="ANSI_X3.4-1968"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_171"/>
+    <property name="user.dir" value="/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.171-b11"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests" classname="kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests" time="0">
+    <skipped message="Skipping test due to KINESIS not being available com.amazonaws.SdkClientException: Unable to execute HTTP request: Connect to localhost:4568 [localhost/127.0.0.1] failed: Connection refused (Connection refused)"/>
+    <system-out><![CDATA[22:18:40.709 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:40.723 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:18:40.736 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:18:40.776 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:18:40.796 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests], using SpringBootContextLoader
+22:18:40.802 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]: class path resource [kinesis/webflux/CloudStreamKinesisToWebfluxApplicationTests-context.xml] does not exist
+22:18:40.802 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]: class path resource [kinesis/webflux/CloudStreamKinesisToWebfluxApplicationTestsContext.groovy] does not exist
+22:18:40.803 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:18:40.806 [main] DEBUG org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Ignoring class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests$TestSource]; it must be static, non-private, non-final, and annotated with @Configuration to be considered a default configuration class.
+22:18:40.906 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:41.017 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/opt/spring-cloud/spring-cloud-stream-samples/kinesis-samples/kinesis-to-webflux/target/classes/kinesis/webflux/CloudStreamKinesisToWebfluxApplication.class]
+22:18:41.018 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration kinesis.webflux.CloudStreamKinesisToWebfluxApplication for test class kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests
+22:18:41.173 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]: using defaults.
+22:18:41.173 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:18:41.190 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6497b078, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@41c2284a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@53aad5d5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46fa7c39, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1fb700ee, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4f67eb2a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4a668b6e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5f683daf, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@78ffe6dc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@8317c52, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@76f2bbc1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@68e965f5]
+22:18:41.193 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:41.194 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:41.195 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:41.195 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:41.196 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:41.197 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:41.201 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:41.201 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kinesis.webflux.CloudStreamKinesisToWebfluxApplicationTests]
+22:18:41.485 [main] DEBUG com.amazonaws.AmazonWebServiceClient - Internal logging successfully configured to commons logger: true
+22:18:41.834 [main] DEBUG com.amazonaws.metrics.AwsSdkMetrics - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+22:18:41.931 [main] DEBUG com.amazonaws.request - Sending Request: POST http://localhost:4568 / Headers: (User-Agent: aws-sdk-java/1.11.336 Linux/4.13.0-46-generic OpenJDK_64-Bit_Server_VM/25.171-b11 java/1.8.0_171, amz-sdk-invocation-id: e222dbe1-f748-5a02-1232-4676c7ca2825, Content-Length: 2, X-Amz-Target: Kinesis_20131202.ListStreams, Content-Type: application/x-amz-json-1.1, ) 
+22:18:41.984 [main] DEBUG com.amazonaws.auth.AWS4Signer - AWS4 Canonical Request: '"POST
+/
+
+amz-sdk-invocation-id:e222dbe1-f748-5a02-1232-4676c7ca2825
+amz-sdk-retry:0/0/500
+content-length:2
+content-type:application/x-amz-json-1.1
+host:localhost:4568
+user-agent:aws-sdk-java/1.11.336 Linux/4.13.0-46-generic OpenJDK_64-Bit_Server_VM/25.171-b11 java/1.8.0_171
+x-amz-date:20190320T164841Z
+x-amz-target:Kinesis_20131202.ListStreams
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-date;x-amz-target
+44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+22:18:41.985 [main] DEBUG com.amazonaws.auth.AWS4Signer - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20190320T164841Z
+20190320/us-west-2/kinesis/aws4_request
+36096a76269415747ab942fb10613804abd5826b9ff59ba8a8e5363153163aa5"
+22:18:42.000 [main] DEBUG com.amazonaws.auth.AWS4Signer - Generating a new signing key as the signing key not available in the cache for the date 1553040000000
+22:18:42.034 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+22:18:42.042 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+22:18:42.043 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:4568][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+22:18:42.057 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:4568][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+22:18:42.060 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:4568
+22:18:42.064 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:4568
+22:18:42.071 [main] DEBUG com.amazonaws.http.conn.ClientConnectionManagerFactory - 
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.amazonaws.http.conn.ClientConnectionManagerFactory$Handler.invoke(ClientConnectionManagerFactory.java:76)
+	at com.amazonaws.http.conn.$Proxy41.connect(Unknown Source)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.amazonaws.http.apache.client.impl.SdkHttpClient.execute(SdkHttpClient.java:72)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1238)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1058)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:743)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:717)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:699)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:667)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:649)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:513)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.doInvoke(AmazonKinesisClient.java:2388)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.invoke(AmazonKinesisClient.java:2364)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.executeListStreams(AmazonKinesisClient.java:1405)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.listStreams(AmazonKinesisClient.java:1380)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.listStreams(AmazonKinesisClient.java:1417)
+	at kinesis.webflux.LocalKinesisResource.obtainResource(LocalKinesisResource.java:78)
+	at org.springframework.cloud.stream.test.junit.AbstractExternalResourceTestSupport.apply(AbstractExternalResourceTestSupport.java:59)
+	at org.junit.rules.RunRules.applyAll(RunRules.java:26)
+	at org.junit.rules.RunRules.<init>(RunRules.java:15)
+	at org.junit.runners.ParentRunner.withClassRules(ParentRunner.java:245)
+	at org.junit.runners.ParentRunner.classBlock(ParentRunner.java:194)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:362)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4568 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	... 42 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 43 common frames omitted
+22:18:42.072 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Shutdown connection
+22:18:42.072 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+22:18:42.072 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:4568][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+22:18:42.075 [main] DEBUG com.amazonaws.request - Sending Request: POST http://localhost:4568 / Headers: (User-Agent: aws-sdk-java/1.11.336 Linux/4.13.0-46-generic OpenJDK_64-Bit_Server_VM/25.171-b11 java/1.8.0_171, amz-sdk-invocation-id: ec0a1bb5-9582-b25e-2318-87d5aecda6fe, Content-Length: 2, X-Amz-Target: Kinesis_20131202.ListStreams, Content-Type: application/x-amz-json-1.1, ) 
+22:18:42.075 [main] DEBUG com.amazonaws.auth.AWS4Signer - AWS4 Canonical Request: '"POST
+/
+
+amz-sdk-invocation-id:ec0a1bb5-9582-b25e-2318-87d5aecda6fe
+amz-sdk-retry:0/0/500
+content-length:2
+content-type:application/x-amz-json-1.1
+host:localhost:4568
+user-agent:aws-sdk-java/1.11.336 Linux/4.13.0-46-generic OpenJDK_64-Bit_Server_VM/25.171-b11 java/1.8.0_171
+x-amz-date:20190320T164842Z
+x-amz-target:Kinesis_20131202.ListStreams
+
+amz-sdk-invocation-id;amz-sdk-retry;content-length;content-type;host;user-agent;x-amz-date;x-amz-target
+44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+22:18:42.075 [main] DEBUG com.amazonaws.auth.AWS4Signer - AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20190320T164842Z
+20190320/us-west-2/kinesis/aws4_request
+26fe083a39e506aaf2e134e34d57d997c908c1cf373a65dbc1cc14bf7f66dc99"
+22:18:42.076 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+22:18:42.076 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+22:18:42.076 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:4568][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+22:18:42.077 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://localhost:4568][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+22:18:42.077 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:4568
+22:18:42.077 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:4568
+22:18:42.078 [main] DEBUG com.amazonaws.http.conn.ClientConnectionManagerFactory - 
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.amazonaws.http.conn.ClientConnectionManagerFactory$Handler.invoke(ClientConnectionManagerFactory.java:76)
+	at com.amazonaws.http.conn.$Proxy41.connect(Unknown Source)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.amazonaws.http.apache.client.impl.SdkHttpClient.execute(SdkHttpClient.java:72)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1238)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1058)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:743)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:717)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:699)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:667)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:649)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:513)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.doInvoke(AmazonKinesisClient.java:2388)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.invoke(AmazonKinesisClient.java:2364)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.executeListStreams(AmazonKinesisClient.java:1405)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.listStreams(AmazonKinesisClient.java:1380)
+	at kinesis.webflux.LocalKinesisResource.cleanupResource(LocalKinesisResource.java:85)
+	at org.springframework.cloud.stream.test.junit.AbstractExternalResourceTestSupport.maybeCleanup(AbstractExternalResourceTestSupport.java:112)
+	at org.springframework.cloud.stream.test.junit.AbstractExternalResourceTestSupport.apply(AbstractExternalResourceTestSupport.java:62)
+	at org.junit.rules.RunRules.applyAll(RunRules.java:26)
+	at org.junit.rules.RunRules.<init>(RunRules.java:15)
+	at org.junit.runners.ParentRunner.withClassRules(ParentRunner.java:245)
+	at org.junit.runners.ParentRunner.classBlock(ParentRunner.java:194)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:362)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4568 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	... 42 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 43 common frames omitted
+22:18:42.079 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Shutdown connection
+22:18:42.079 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+22:18:42.079 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->http://localhost:4568][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+22:18:42.079 [main] WARN kinesis.webflux.LocalKinesisResource - Exception while trying to cleanup failed resource
+com.amazonaws.SdkClientException: Unable to execute HTTP request: Connect to localhost:4568 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleRetryableException(AmazonHttpClient.java:1116)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1066)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:743)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:717)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:699)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:667)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:649)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:513)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.doInvoke(AmazonKinesisClient.java:2388)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.invoke(AmazonKinesisClient.java:2364)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.executeListStreams(AmazonKinesisClient.java:1405)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.listStreams(AmazonKinesisClient.java:1380)
+	at kinesis.webflux.LocalKinesisResource.cleanupResource(LocalKinesisResource.java:85)
+	at org.springframework.cloud.stream.test.junit.AbstractExternalResourceTestSupport.maybeCleanup(AbstractExternalResourceTestSupport.java:112)
+	at org.springframework.cloud.stream.test.junit.AbstractExternalResourceTestSupport.apply(AbstractExternalResourceTestSupport.java:62)
+	at org.junit.rules.RunRules.applyAll(RunRules.java:26)
+	at org.junit.rules.RunRules.<init>(RunRules.java:15)
+	at org.junit.runners.ParentRunner.withClassRules(ParentRunner.java:245)
+	at org.junit.runners.ParentRunner.classBlock(ParentRunner.java:194)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:362)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4568 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.amazonaws.http.conn.ClientConnectionManagerFactory$Handler.invoke(ClientConnectionManagerFactory.java:76)
+	at com.amazonaws.http.conn.$Proxy41.connect(Unknown Source)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.amazonaws.http.apache.client.impl.SdkHttpClient.execute(SdkHttpClient.java:72)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1238)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1058)
+	... 27 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 43 common frames omitted
+22:18:42.080 [main] ERROR kinesis.webflux.LocalKinesisResource - KINESIS IS NOT AVAILABLE, SKIPPING TESTS
+com.amazonaws.SdkClientException: Unable to execute HTTP request: Connect to localhost:4568 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleRetryableException(AmazonHttpClient.java:1116)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1066)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:743)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:717)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:699)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:667)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:649)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:513)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.doInvoke(AmazonKinesisClient.java:2388)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.invoke(AmazonKinesisClient.java:2364)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.executeListStreams(AmazonKinesisClient.java:1405)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.listStreams(AmazonKinesisClient.java:1380)
+	at com.amazonaws.services.kinesis.AmazonKinesisClient.listStreams(AmazonKinesisClient.java:1417)
+	at kinesis.webflux.LocalKinesisResource.obtainResource(LocalKinesisResource.java:78)
+	at org.springframework.cloud.stream.test.junit.AbstractExternalResourceTestSupport.apply(AbstractExternalResourceTestSupport.java:59)
+	at org.junit.rules.RunRules.applyAll(RunRules.java:26)
+	at org.junit.rules.RunRules.<init>(RunRules.java:15)
+	at org.junit.runners.ParentRunner.withClassRules(ParentRunner.java:245)
+	at org.junit.runners.ParentRunner.classBlock(ParentRunner.java:194)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:362)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4568 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.amazonaws.http.conn.ClientConnectionManagerFactory$Handler.invoke(ClientConnectionManagerFactory.java:76)
+	at com.amazonaws.http.conn.$Proxy41.connect(Unknown Source)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.amazonaws.http.apache.client.impl.SdkHttpClient.execute(SdkHttpClient.java:72)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1238)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1058)
+	... 27 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 43 common frames omitted
+]]></system-out>
+  </testcase>
+</testsuite>
