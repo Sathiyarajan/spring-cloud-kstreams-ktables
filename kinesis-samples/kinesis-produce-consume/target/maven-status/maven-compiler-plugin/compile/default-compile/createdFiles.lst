@@ -1,0 +1,8 @@
+demo/stream/OrdersSource.class
+demo/stream/Event.class
+demo/KinesisApplication.class
+demo/data/Order.class
+demo/controller/OrderController.class
+demo/repository/OrderRepository.class
+demo/stream/OrderStreamConfiguration.class
+demo/stream/OrderProcessor.class

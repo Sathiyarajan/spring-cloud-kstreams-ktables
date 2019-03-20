@@ -1,0 +1,2 @@
+/opt/spring-cloud/spring-cloud-stream-samples/partitioning-samples/partitioning-consumer-sample-rabbit/src/main/java/demo/PartitioningRabbitDemoApplication.java
+/opt/spring-cloud/spring-cloud-stream-samples/partitioning-samples/partitioning-consumer-sample-rabbit/src/main/java/demo/PartitioningRabbitDemo.java

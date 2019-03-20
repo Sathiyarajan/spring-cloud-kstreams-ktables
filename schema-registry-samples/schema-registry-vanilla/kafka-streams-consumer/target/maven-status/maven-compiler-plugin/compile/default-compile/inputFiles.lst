@@ -1,0 +1,2 @@
+/opt/spring-cloud/spring-cloud-stream-samples/schema-registry-samples/schema-registry-vanilla/kafka-streams-consumer/target/generated-sources/avro/com/example/Sensor.java
+/opt/spring-cloud/spring-cloud-stream-samples/schema-registry-samples/schema-registry-vanilla/kafka-streams-consumer/src/main/java/sample/consumer/CountVersionApplication.java

@@ -1,0 +1,2 @@
+/opt/spring-cloud/spring-cloud-stream-samples/processor-samples/uppercase-transformer/src/main/java/demo/UppercaseTransformerApplication.java
+/opt/spring-cloud/spring-cloud-stream-samples/processor-samples/uppercase-transformer/src/main/java/demo/UppercaseTransformer.java

@@ -1,0 +1,2 @@
+/opt/spring-cloud/spring-cloud-stream-samples/partitioning-samples/partitioning-producer-sample/src/main/java/demo/producer/PartProducerApplication.java
+/opt/spring-cloud/spring-cloud-stream-samples/partitioning-samples/partitioning-producer-sample/src/main/java/demo/producer/Producer.java

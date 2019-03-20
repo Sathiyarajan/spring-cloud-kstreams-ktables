@@ -1,0 +1,2 @@
+/opt/spring-cloud/spring-cloud-stream-samples/schema-registry-samples/schema-registry-confluent/schema-registry-confluent-producer1/src/main/java/sample/producer1/Producer1Application.java
+/opt/spring-cloud/spring-cloud-stream-samples/schema-registry-samples/schema-registry-confluent/schema-registry-confluent-producer1/target/generated-sources/avro/com/example/Sensor.java

@@ -1,0 +1,8 @@
+sample/sensor/average/SensorAverageProcessorApplication$TestSink.class
+sample/sensor/average/SensorAverageProcessorApplication$Average.class
+sample/sensor/average/SensorAverageProcessorApplication$Accumulator.class
+sample/sensor/average/SensorAverageProcessorApplication$Sink.class
+sample/sensor/average/SensorAverageProcessorApplication$TestSource.class
+sample/sensor/average/SensorAverageProcessorApplication$Sensor.class
+sample/sensor/average/SensorAverageProcessorApplication.class
+sample/sensor/average/SensorAverageProcessorApplication$Source.class

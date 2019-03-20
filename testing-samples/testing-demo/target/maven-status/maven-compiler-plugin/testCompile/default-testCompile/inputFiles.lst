@@ -1,0 +1,5 @@
+/opt/spring-cloud/spring-cloud-stream-samples/testing-samples/testing-demo/src/test/java/org/springframework/cloud/stream/testing/processor/ToUpperCaseProcessorTests.java
+/opt/spring-cloud/spring-cloud-stream-samples/testing-samples/testing-demo/src/test/java/org/springframework/cloud/stream/testing/source/FooBarSourceTests.java
+/opt/spring-cloud/spring-cloud-stream-samples/testing-samples/testing-demo/src/test/java/org/springframework/cloud/stream/testing/processor/integration/ToUpperCaseProcessorIntTests.java
+/opt/spring-cloud/spring-cloud-stream-samples/testing-samples/testing-demo/src/test/java/org/springframework/cloud/stream/testing/processor/NaiveToUpperCaseTests.java
+/opt/spring-cloud/spring-cloud-stream-samples/testing-samples/testing-demo/src/test/java/org/springframework/cloud/stream/testing/sink/JdbcSinkTests.java

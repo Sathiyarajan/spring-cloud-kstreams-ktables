@@ -1,0 +1,6 @@
+org/springframework/cloud/stream/testing/sink/JdbcSinkTests$1.class
+org/springframework/cloud/stream/testing/source/FooBarSourceTests.class
+org/springframework/cloud/stream/testing/processor/integration/ToUpperCaseProcessorIntTests.class
+org/springframework/cloud/stream/testing/processor/NaiveToUpperCaseTests.class
+org/springframework/cloud/stream/testing/processor/ToUpperCaseProcessorTests.class
+org/springframework/cloud/stream/testing/sink/JdbcSinkTests.class

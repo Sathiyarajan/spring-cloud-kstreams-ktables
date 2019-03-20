@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.cloud.stream.testing.source.FooBarSourceTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.868 s - in org.springframework.cloud.stream.testing.source.FooBarSourceTests

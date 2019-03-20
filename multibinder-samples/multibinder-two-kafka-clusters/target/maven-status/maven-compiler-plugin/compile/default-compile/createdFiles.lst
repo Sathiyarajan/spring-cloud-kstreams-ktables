@@ -1,0 +1,6 @@
+multibinder/MultibinderApplication.class
+multibinder/BridgeTransformer$TestSink.class
+multibinder/BridgeTransformer.class
+multibinder/BridgeTransformer$TestConsumer.class
+multibinder/BridgeTransformer$TestSource.class
+multibinder/BridgeTransformer$TestProducer.class
